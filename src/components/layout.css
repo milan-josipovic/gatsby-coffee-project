@@ -37,3 +37,14 @@ h6 {
   background-size: cover;
   opacity: 1 !important;
 }
+.btn-yellow {
+  color: var(--mainYellow);
+  border-color: var(--mainYellow);
+}
+.btn-yellow:hover {
+  background: var(--mainYellow);
+  color: var(--mainBrown);
+}
+.footer {
+  background: var(--mainBrown);
+}
