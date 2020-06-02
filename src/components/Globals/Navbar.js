@@ -1,6 +1,6 @@
 import React, { Component } from "react"
 import { Link } from "gatsby"
-import logo from "../../images/logo.svg"
+import logo from "../../images/logo.png"
 import { FaCartArrowDown } from "react-icons/fa"
 
 export default class Navbar extends Component {
@@ -30,7 +30,7 @@ export default class Navbar extends Component {
   }
   render() {
     return (
-      <nav className="navbar navbar-expand-sm bg-light navbar-light">
+      <nav className="navbar navbar-expand-sm bg-light navbar-light test">
         <Link to="/" className="navbar-brand">
           <img src={logo} alt="logo" />
           {/* https://www.iconfinder.com/icons/185113/coffee_streamline_icon
@@ -49,7 +49,10 @@ export default class Navbar extends Component {
             {this.state.links.map(link => {
               return (
                 <li key={link.id} className="nav-item">
-                  <Link to={link.path} className="nav-link text-capitalize">
+                  <Link
+                    to={link.path}
+                    className="nav-link text-capitalize test"
+                  >
                     {link.text}
                   </Link>
                 </li>
